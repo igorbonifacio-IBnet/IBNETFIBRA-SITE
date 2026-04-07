@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBnet Telecom | Internet Fibra Óptica em Aparecida de Goiânia</title>
+    <meta name="description" content="Internet fibra óptica com estabilidade, instalação rápida e atendimento próximo em Aparecida de Goiânia. Planos de 700, 850 e 1000 Mega.">
+    <meta name="theme-color" content="#ff5a1f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/pCOiFHw/UoYd8656Q=" crossorigin="">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-bg"></div>
+
+    <header class="header" id="topo">
+        <nav class="navbar container">
+            <a href="#home" class="brand" aria-label="IBnet Telecom">
+                <img src="assets/images/CompletaBranco.png" alt="IBnet Telecom" class="logo">
+            </a>
+
+            <button class="hamburger" type="button" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-panel">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#planos" class="nav-link">Planos</a></li>
+                    <li><a href="#cobertura" class="nav-link">Cobertura</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="tel:+556230302741" class="phone-btn">
+                        <i class="fas fa-phone"></i>
+                        (62) 3030-2741
+                    </a>
+                    <a href="https://wa.me/556230302741" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal">
+                    <span class="eyebrow">A fibra que acompanha o ritmo da sua casa e da sua empresa</span>
+                    <h1>Internet de alta performance em Aparecida de Goiânia com atendimento de verdade.</h1>
+                    <p class="hero-text">A IBnet Telecom entrega velocidade real, baixa latência, instalação rápida e suporte próximo para quem quer trabalhar, estudar, jogar e assistir sem travar.</p>
+
+                    <div class="hero-proof">
+                        <div class="proof-card">
+                            <strong>Instalação rápida</strong>
+                            <span>Agendamento ágil e ativação sem complicação.</span>
+                        </div>
+                        <div class="proof-card">
+                            <strong>Suporte humano</strong>
+                            <span>Atendimento próximo para resolver com rapidez.</span>
+                        </div>
+                        <div class="proof-card">
+                            <strong>100% fibra óptica</strong>
+                            <span>Mais estabilidade para streaming, home office e games.</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#planos" class="btn btn-primary">
+                            <i class="fas fa-bolt"></i>
+                            Ver planos
+                        </a>
+                        <a href="https://wa.me/556230302741?text=Olá! Quero contratar internet da IBnet Telecom." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar atendimento
+                        </a>
+                    </div>
+
+                    <ul class="hero-tags">
+                        <li><i class="fas fa-circle-check"></i> Wi-Fi para a casa toda</li>
+                        <li><i class="fas fa-circle-check"></i> Sem enrolação no atendimento</li>
+                        <li><i class="fas fa-circle-check"></i> Melhor custo-benefício da região</li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-panel">
+                        <div class="signal-rings" aria-hidden="true"></div>
+                        <div class="speed-card">
+                            <span class="speed-kicker">Plano premium</span>
+                            <strong class="speed-text">1000 MB</strong>
+                            <span class="speed-label">Ultra velocidade com estabilidade para tudo</span>
+                        </div>
+                        <div class="floating-metric metric-top">
+                            <span>Upload otimizado</span>
+                            <strong>500 Mega</strong>
+                        </div>
+                        <div class="floating-metric metric-bottom">
+                            <span>Atendimento</span>
+                            <strong>Via WhatsApp</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-bar">
+            <div class="container stats-grid reveal">
+                <div class="stat-item">
+                    <strong>700 a 1000 Mega</strong>
+                    <span>Planos para residências exigentes e pequenas empresas.</span>
+                </div>
+                <div class="stat-item">
+                    <strong>100% fibra óptica</strong>
+                    <span>Mais estabilidade e desempenho nas horas mais importantes.</span>
+                </div>
+                <div class="stat-item">
+                    <strong>Atendimento local</strong>
+                    <span>Equipe próxima para falar com clareza e resolver rápido.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="diferenciais">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Por que a IBnet cresce na preferência dos clientes</span>
+                    <h2>O site agora vende o que realmente importa: confiança, velocidade e resposta rápida.</h2>
+                    <p>Não basta falar de megas. Um provedor forte comunica estabilidade, proximidade, tecnologia e suporte. É isso que estamos colocando em evidência.</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon"><i class="fas fa-house-signal"></i></div>
+                        <h3>Casa conectada sem zonas de sombra</h3>
+                        <p>Internet pronta para streaming em 4K, aulas online, chamadas de vídeo e múltiplos dispositivos ao mesmo tempo.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon"><i class="fas fa-briefcase"></i></div>
+                        <h3>Home office com estabilidade real</h3>
+                        <p>Conexão consistente para sistemas em nuvem, videoconferências, upload de arquivos e rotina profissional sem interrupção.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon"><i class="fas fa-gamepad"></i></div>
+                        <h3>Baixa latência para games e live</h3>
+                        <p>Mais fluidez para jogar online, transmitir conteúdo e aproveitar a rede com melhor resposta.</p>
+                    </article>
+
+                    <article class="benefit-card reveal">
+                        <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Atendimento que não some</h3>
+                        <p>Contato rápido no WhatsApp e presença local para quem quer solução, não protocolo infinito.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="planos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Planos IBnet Telecom</span>
+                    <h2>Escolha o plano ideal e fale com a equipe em poucos segundos.</h2>
+                    <p>Valores claros, velocidades atualizadas e contratação simplificada direto pelo WhatsApp.</p>
+                </div>
+
+                <div class="plans-grid">
+                    <article class="plan-card reveal">
+                        <span class="plan-line">Plano Essencial</span>
+                        <h3>700 Mega</h3>
+                        <p class="plan-description">Ideal para famílias que querem estabilidade e velocidade para o dia a dia.</p>
+                        <div class="plan-price">
+                            <small>R$</small>
+                            <strong>99,90</strong>
+                            <span>/mês</span>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Download de 700 Mega</li>
+                            <li>Upload de 350 Mega</li>
+                            <li>Instalação rápida</li>
+                            <li>Suporte via WhatsApp</li>
+                            <li>Fibra óptica 100%</li>
+                        </ul>
+                        <a href="https://wa.me/556230302741" target="_blank" rel="noopener noreferrer" class="btn btn-primary js-plan-cta" data-plan="Plano Essencial 700 Mega por R$ 99,90">Quero esse plano</a>
+                    </article>
+
+                    <article class="plan-card featured reveal">
+                        <div class="featured-seal">Mais escolhido</div>
+                        <span class="plan-line">Plano Avançado</span>
+                        <h3>850 Mega</h3>
+                        <p class="plan-description">Excelente para casas com muitos aparelhos, home office intenso e streaming constante.</p>
+                        <div class="plan-price">
+                            <small>R$</small>
+                            <strong>119,90</strong>
+                            <span>/mês</span>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Download de 850 Mega</li>
+                            <li>Upload de 425 Mega</li>
+                            <li>Wi-Fi 6 incluso</li>
+                            <li>Instalação gratuita</li>
+                            <li>Suporte ágil</li>
+                        </ul>
+                        <a href="https://wa.me/556230302741" target="_blank" rel="noopener noreferrer" class="btn btn-primary js-plan-cta" data-plan="Plano Avançado 850 Mega por R$ 119,90">Quero esse plano</a>
+                    </article>
+
+                    <article class="plan-card reveal">
+                        <span class="plan-line">Plano Premium</span>
+                        <h3>1000 Mega</h3>
+                        <p class="plan-description">Performance máxima para quem exige a melhor experiência em velocidade, Wi-Fi e estabilidade.</p>
+                        <div class="plan-price">
+                            <small>R$</small>
+                            <strong>139,90</strong>
+                            <span>/mês</span>
+                        </div>
+                        <ul class="plan-list">
+                            <li>Download de 1000 Mega</li>
+                            <li>Upload de 500 Mega</li>
+                            <li>Wi-Fi 6 incluso</li>
+                            <li>Suporte prioritário</li>
+                            <li>Ideal para uso intenso</li>
+                        </ul>
+                        <a href="https://wa.me/556230302741" target="_blank" rel="noopener noreferrer" class="btn btn-primary js-plan-cta" data-plan="Plano Premium 1000 Mega por R$ 139,90">Quero esse plano</a>
+                    </article>
+                </div>
+
+                <div class="addons reveal">
+                    <div class="addon-card">
+                        <i class="fas fa-network-wired"></i>
+                        <div>
+                            <strong>Ponto adicional com rede mesh</strong>
+                            <span>Amplie a cobertura do Wi-Fi com mais alcance e qualidade.</span>
+                        </div>
+                        <b>R$ 29,90/mês</b>
+                    </div>
+                    <div class="addon-card">
+                        <i class="fas fa-phone-volume"></i>
+                        <div>
+                            <strong>Telefonia fixa</strong>
+                            <span>Ligações com qualidade digital e praticidade para sua rotina.</span>
+                        </div>
+                        <b>R$ 29,90/mês</b>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-accent">
+            <div class="container cta-band reveal">
+                <div>
+                    <span class="eyebrow">Atendimento comercial</span>
+                    <h2>Quer contratar hoje?</h2>
+                    <p>Fale agora com a IBnet Telecom e receba atendimento rápido pelo WhatsApp.</p>
+                </div>
+                <a href="https://wa.me/556230302741?text=Olá! Quero contratar a internet da IBnet Telecom." target="_blank" rel="noopener noreferrer" class="btn btn-light">
+                    <i class="fab fa-whatsapp"></i>
+                    Iniciar atendimento
+                </a>
+            </div>
+        </section>
+
+        <section class="section section-soft" id="cobertura">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Cobertura em expansão</span>
+                    <h2>Consulte os bairros atendidos em Aparecida de Goiânia.</h2>
+                    <p>Veja no mapa as regiões já cobertas e fale com a equipe para confirmar disponibilidade no seu endereço.</p>
+                </div>
+
+                <div class="coverage-layout">
+                    <div class="coverage-map-wrap reveal">
+                        <div id="map" class="coverage-map"><div class="coverage-map-fallback"><strong>Consulte a cobertura no WhatsApp</strong><span>Atendimento rápido para validar disponibilidade no seu endereço em Aparecida de Goiânia.</span><a href="https://wa.me/556230302741?text=Olá! Quero consultar a cobertura da IBnet Telecom no meu endereço." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar cobertura</a></div></div>
+                    </div>
+                    <div class="coverage-panel reveal">
+                        <div class="coverage-panel-header">
+                            <h3>Bairros atendidos</h3>
+                            <a href="https://wa.me/556230302741?text=Olá! Quero confirmar a cobertura da IBnet Telecom no meu endereço." target="_blank" rel="noopener noreferrer">Consultar meu endereço</a>
+                        </div>
+                        <ul id="bairros-list" class="coverage-list"><li>Garavelo</li><li>Park Sul</li><li>Jardim Tropical</li><li>Buriti Sereno</li><li>Parque das Nações</li><li>Campos Elíseos</li><li>Jardim Tiradentes</li><li>Cidade Livre</li></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="depoimentos">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Prova social</span>
+                    <h2>Uma operadora forte transmite segurança antes mesmo do primeiro contato.</h2>
+                    <p>Depoimentos bem posicionados ajudam o visitante a decidir mais rápido e com menos objeções.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <article class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>“Instalação rápida, atendimento educado e internet estável. Foi uma mudança nítida na rotina da minha casa.”</p>
+                        <strong>Cliente residencial</strong>
+                        <span>Aparecida de Goiânia</span>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>“Para home office, a diferença foi enorme. A conexão se mantém estável e o suporte responde de verdade.”</p>
+                        <strong>Cliente home office</strong>
+                        <span>Aparecida de Goiânia</span>
+                    </article>
+                    <article class="testimonial-card reveal">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p>“Gostei da clareza no atendimento e da velocidade entregue. Hoje indicaria a IBnet sem dificuldade.”</p>
+                        <strong>Cliente premium</strong>
+                        <span>Aparecida de Goiânia</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-dark" id="faq">
+            <div class="container faq-layout">
+                <div class="section-heading reveal align-left">
+                    <span class="eyebrow">FAQ</span>
+                    <h2>Dúvidas que mais influenciam a decisão de compra.</h2>
+                    <p>Uma boa landing de provedor reduz fricção. Por isso, as principais objeções precisam ser respondidas com clareza.</p>
+                </div>
+
+                <div class="faq-list reveal">
+                    <article class="faq-item active">
+                        <button class="faq-question" type="button">
+                            <span>A instalação é rápida?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. A equipe comercial orienta o processo e agenda a instalação com rapidez conforme a disponibilidade da região.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Os planos são 100% fibra óptica?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. Os planos divulgados no site são baseados em fibra óptica, com foco em estabilidade, velocidade e melhor experiência de uso.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Como confirmar se meu endereço tem cobertura?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você pode consultar diretamente pelo WhatsApp. A equipe confirma a disponibilidade no endereço e orienta a melhor opção de plano.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item">
+                        <button class="faq-question" type="button">
+                            <span>Posso contratar pelo WhatsApp?</span>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim. O site foi preparado para direcionar os principais pontos de conversão para o WhatsApp, facilitando orçamento e contratação.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">Contato e conversão</span>
+                    <h2>Fale com a IBnet Telecom do jeito que for mais rápido para você.</h2>
+                    <p>Centralizamos os pontos de contato para facilitar contratação, financeiro e confirmação de cobertura.</p>
+                </div>
+
+                <div class="contact-layout">
+                    <div class="contact-column reveal">
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Telefone e WhatsApp</strong>
+                                <span>(62) 3030-2741</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <span>grupoinfotelecom@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-location-dot"></i>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Av. R-009, qd 50 lt 13, Campos Elíseos, Aparecida de Goiânia - GO</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta-box">
+                            <a href="https://wa.me/556230302741?text=Olá! Quero falar com o atendimento comercial da IBnet Telecom." target="_blank" rel="noopener noreferrer" class="btn btn-primary full">Falar com o comercial</a>
+                            <a href="https://wa.me/556230302741?text=Olá! Quero falar com o financeiro da IBnet Telecom." target="_blank" rel="noopener noreferrer" class="btn btn-secondary full">Falar com o financeiro</a>
+                            <img src="assets/images/qrcode_financeiro.jpg" alt="QR Code para atendimento da IBnet Telecom" class="finance-qr">
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card reveal">
+                        <h3>Receber atendimento agora</h3>
+                        <p>Preencha os dados e continuamos a conversa no WhatsApp com mais agilidade.</p>
+                        <form id="contactForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Nome</label>
+                                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefone</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Seu telefone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="plan">Plano de interesse</label>
+                                <select id="plan" name="plan" required>
+                                    <option value="">Selecione um plano</option>
+                                    <option value="Plano Essencial - 700 Mega">Plano Essencial - 700 Mega</option>
+                                    <option value="Plano Avançado - 850 Mega">Plano Avançado - 850 Mega</option>
+                                    <option value="Plano Premium - 1000 Mega">Plano Premium - 1000 Mega</option>
+                                    <option value="Rede Mesh / ponto adicional">Rede Mesh / ponto adicional</option>
+                                    <option value="Telefonia fixa">Telefonia fixa</option>
+                                    <option value="Consulta de cobertura">Consulta de cobertura</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Conte o que você precisa"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full">Enviar pelo WhatsApp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <img src="assets/images/CompletaBranco.png" alt="IBnet Telecom" class="footer-logo">
+                <p>IBnet Telecom. Internet fibra óptica com atendimento próximo, velocidade real e foco em experiência.</p>
+            </div>
+            <div>
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                    <li><a href="#cobertura">Cobertura</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="tel:+556230302741">(62) 3030-2741</a></li>
+                    <li><a href="mailto:grupoinfotelecom@gmail.com">grupoinfotelecom@gmail.com</a></li>
+                    <li>Aparecida de Goiânia - GO</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Redes sociais</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/ibnetelecom/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da IBnet Telecom"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/556230302741" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da IBnet Telecom"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="currentYear"></span> IBnet Telecom. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/556230302741?text=Olá! Quero atendimento da IBnet Telecom." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp da IBnet Telecom">
+        <i class="fab fa-whatsapp"></i>
+        <span>Fale agora</span>
+    </a>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20n62lQ4G885J8+e5x3kKj1z0vKj/s/t2r+w6p/z6w0=" crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>
