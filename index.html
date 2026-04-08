@@ -357,13 +357,18 @@
                                 referrerpolicy="no-referrer-when-downgrade"
                                 allowfullscreen
                             ></iframe>
-                            <div class="coverage-map-card">
-                                <span class="coverage-map-kicker">Mapa de cobertura</span>
-                                <strong>Veja as áreas delimitadas pela IBnet</strong>
-                                <span>Abra o mapa completo ou confirme seu endereço no WhatsApp para validar a disponibilidade.</span>
-                                <div class="coverage-map-actions">
-                                    <a href="https://www.google.com/maps/d/viewer?mid=1s7hu3H0b49ojgSXNvSIIQtdCrPk12k4" target="_blank" rel="noopener noreferrer" class="btn btn-light">Abrir mapa completo</a>
-                                    <a href="https://wa.me/556230302741?text=Olá! Quero consultar a cobertura da IBnet Telecom no meu endereço." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar cobertura</a>
+                            <div class="coverage-map-card" data-coverage-card>
+                                <div class="coverage-map-card-top">
+                                    <span class="coverage-map-kicker">Mapa de cobertura</span>
+                                    <button type="button" class="coverage-map-toggle" data-coverage-toggle aria-expanded="true" aria-controls="coverage-map-card-body" aria-label="Minimizar informacoes do mapa">-</button>
+                                </div>
+                                <div class="coverage-map-card-body" id="coverage-map-card-body">
+                                    <strong>Veja as áreas delimitadas pela IBnet</strong>
+                                    <span>Abra o mapa completo ou confirme seu endereço no WhatsApp para validar a disponibilidade.</span>
+                                    <div class="coverage-map-actions">
+                                        <a href="https://www.google.com/maps/d/viewer?mid=1s7hu3H0b49ojgSXNvSIIQtdCrPk12k4" target="_blank" rel="noopener noreferrer" class="btn btn-light">Abrir mapa completo</a>
+                                        <a href="https://wa.me/556230302741?text=Olá! Quero consultar a cobertura da IBnet Telecom no meu endereço." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar cobertura</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

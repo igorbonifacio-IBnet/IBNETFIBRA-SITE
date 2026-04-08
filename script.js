@@ -4,6 +4,8 @@ const navPanel = document.querySelector(".nav-panel");
 const currentYear = document.getElementById("currentYear");
 const contactForm = document.getElementById("contactForm");
 const interactivePanel = document.querySelector("[data-interactive-panel]");
+const coverageCard = document.querySelector("[data-coverage-card]");
+const coverageToggle = document.querySelector("[data-coverage-toggle]");
 const blogSearch = document.getElementById("blogSearch");
 const blogCards = [...document.querySelectorAll(".blog-card[data-category]")];
 const blogFilters = [...document.querySelectorAll("[data-blog-filter]")];
@@ -84,6 +86,24 @@ if (interactivePanel) {
     interactivePanel.onmousemove = null;
     interactivePanel.onmouseleave = null;
     interactivePanel.style.transform = "none";
+}
+
+if (coverageCard && coverageToggle) {
+    const setCoverageCardCollapsed = (shouldCollapse) => {
+        coverageCard.classList.toggle("is-collapsed", shouldCollapse);
+        coverageToggle.textContent = shouldCollapse ? "+" : "-";
+        coverageToggle.setAttribute("aria-expanded", shouldCollapse ? "false" : "true");
+        coverageToggle.setAttribute(
+            "aria-label",
+            shouldCollapse ? "Expandir informacoes do mapa" : "Minimizar informacoes do mapa"
+        );
+    };
+
+    setCoverageCardCollapsed(false);
+
+    coverageToggle.addEventListener("click", () => {
+        setCoverageCardCollapsed(!coverageCard.classList.contains("is-collapsed"));
+    });
 }
 
 let activeCategory = "all";
